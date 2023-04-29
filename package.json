@@ -1,0 +1,37 @@
+{
+	"name": "11ty-base-blog",
+	"version": "1.0.0",
+	"description": "Build a Blog from Base with Eleventy: \"[Demo](https://11ty-base-blog.netlify.com)\"",
+	"keywords": [],
+	"homepage": "https://github.com/therkut/11ty-base-blog#readme",
+	"bugs": {
+		"url": "https://github.com/therkut/11ty-base-blog/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/therkut/11ty-base-blog.git"
+	},
+	"license": "ISC",
+	"author": "",
+	"scripts": {
+		"benchmark": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy",
+		"build": "npx @11ty/eleventy",
+		"build-ghpages": "npx @11ty/eleventy --pathprefix=/11ty-base-blog/",
+		"debug": "DEBUG=Eleventy* npx @11ty/eleventy",
+		"debugstart": "DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
+		"start": "npx @11ty/eleventy --serve --quiet",
+		"test": "snyk monitor"
+
+	},
+	"devDependencies": {
+		"@11ty/eleventy": "^2.0.1",
+		"@11ty/eleventy-img": "^3.1.0",
+		"@11ty/eleventy-navigation": "^0.3.5",
+		"@11ty/eleventy-plugin-bundle": "^1.0.4",
+		"@11ty/eleventy-plugin-rss": "^1.2.0",
+		"@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+		"luxon": "^3.3.0",
+		"markdown-it-anchor": "^8.6.7",
+		"snyk": "1.1150.0"
+	}
+}
